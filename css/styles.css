@@ -1,0 +1,106 @@
+:root {
+  --odoo-blue: #038aff;
+  --odoo-progress-bar: #ffb300;
+}
+
+.navbar-custom {
+  background-color: var(--odoo-blue);
+}
+
+.navbar-custom .btn {
+  background-color: white ;
+  color: black;
+  border-radius: 10px;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--odoo-blue);
+  padding-bottom: 200px;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: white;
+  transform: skewY(-5deg);
+}
+
+/* Card */
+.payment-card-box {
+  background: white;
+  border-radius: 10px;
+  border-bottom-right-radius: 100px;
+  max-width: 400px;
+}
+
+
+.credit-card {
+  background: linear-gradient(135deg, #1d1b48, #3b2f84);
+  position: relative;
+}
+
+.small-badge {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.transaction p {
+  margin: 0;
+}
+
+/* PROJECTS */
+/* Left */
+.task-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* PROGRESS BARS */
+.progress {
+  height: 4px;
+  border-radius: 4px;
+  background: #eee;
+}
+
+.progress-bar {
+  background-color: var(--odoo-progress-bar); /* Amarillo Odoo */
+}
+
+/* FLOATING IMAGE OVER THE CARD */
+.task-image {
+  width: 260px;
+  border-radius: 20px;
+  position: absolute;
+  top: -90px;
+  left: 300px;
+  z-index: 3;
+}
+
+/* Mobile adjustments */
+@media (max-width: 992px) {
+  .task-image {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/*Images*/
+.common-image {
+  width: 500px;
+  border-radius: 20px;
+}
+
