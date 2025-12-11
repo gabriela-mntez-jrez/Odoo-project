@@ -1,6 +1,7 @@
 :root {
   --odoo-blue: #038aff;
   --odoo-progress-bar: #ffb300;
+  --odoo-banner: #161348
 }
 
 .navbar-custom {
@@ -8,7 +9,7 @@
 }
 
 .navbar-custom .btn {
-  background-color: white ;
+  background-color: white;
   color: black;
   border-radius: 10px;
 }
@@ -76,7 +77,8 @@
 }
 
 .progress-bar {
-  background-color: var(--odoo-progress-bar); /* Amarillo Odoo */
+  background-color: var(--odoo-progress-bar);
+  /* Amarillo Odoo */
 }
 
 /* FLOATING IMAGE OVER THE CARD */
@@ -104,3 +106,41 @@
   border-radius: 20px;
 }
 
+/* Stars rating */
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ddd;
+  font-size: 24px;
+  padding: 0 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input:checked~label {
+  color: #ffc107;
+}
+
+/* Banner */
+.banner {
+  background: var(--odoo-banner);
+  color: white;
+  border-radius: 0px 50px ;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #0d0f3d;
+  padding-top: 100px;
+}
