@@ -186,6 +186,10 @@
     transform: none !important;
   }
 }
+.features-pill {
+  background-color: #61cba9;
+}
+
 .star-rating {
   direction: rtl;
   display: inline-block;
