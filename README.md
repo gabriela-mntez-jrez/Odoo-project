@@ -51,6 +51,7 @@ Compile SCSS to CSS
 From the project root, run:
 ```
 sass scss/main.scss css/styles.css
+```
 (Optional) To watch changes automatically:
 
 ```
