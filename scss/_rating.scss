@@ -1,0 +1,29 @@
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    color: #ddd;
+    font-size: 15px;
+    padding: 0 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:hover~label,
+    input:checked~& {
+      color: #ffc107;
+    }
+
+    &.pop {
+      transform: scale(1.3);
+      transition: transform 0.2s ease;
+    }
+  }
+}

@@ -32,11 +32,11 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-3">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Pages</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">App</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#tools">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#features">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#technology">App</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#helpful-answers">Docs</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center gap-3">
@@ -205,6 +205,7 @@
                         Get components and examples, including tons of variables
                         that will help you grow your business.
                     </h4>
+                    <!-- From my point of view, green color makes difficult to read the text. -->
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                         <label class="form-check-label" for="flexCheckDefault">
@@ -269,17 +270,12 @@
                         <div class="card">
                             <img src="./img/airbnb.png" class="card-img-top p-5" alt="...">
                             <div class="card-body text-center">
-                                <div class="star-rating animated-stars">
-                                    <input type="radio" id="star5" name="rating" value="5">
-                                    <label for="star5" class="bi bi-star-fill"></label>
-                                    <input type="radio" id="star4" name="rating" value="4">
-                                    <label for="star4" class="bi bi-star-fill"></label>
-                                    <input type="radio" id="star3" name="rating" value="3">
-                                    <label for="star3" class="bi bi-star-fill"></label>
-                                    <input type="radio" id="star2" name="rating" value="2">
-                                    <label for="star2" class="bi bi-star-fill"></label>
-                                    <input type="radio" id="star1" name="rating" value="1">
-                                    <label for="star1" class="bi bi-star-fill"></label>
+                                <div class="star-rating static-stars">
+                                    <i class="bi bi-star text-muted"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                                 <p class="fw-bold mb-1">4.95 out of 5 stars</p>
                                 <small class="text-muted">from 23 reviews</small>
@@ -414,82 +410,80 @@
 
                 <!-- AIRBNB CARD -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card award-card shadow-sm text-center p-4">
-                        <img src="./img/airbnb.png" class="award-logo mb-3" alt="">
-                        <div class="star-rating animated-stars">
-                            <input type="radio" id="star5" name="rating" value="5">
-                            <label for="star5" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" class="bi bi-star-fill"></label>
+                    <a href="#" class="award-link">
+                        <div class="card award-card shadow-sm text-center p-4">
+                            <img src="./img/airbnb.png" class="award-logo mb-3" alt="">
+                            <div class="star-rating static-stars">
+                                <i class="bi bi-star text-muted"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="fw-bold mb-1">4.95 out of 5 stars</p>
+                            <small class="text-muted">from 23 reviews</small>
                         </div>
-
-                        <p class="fw-bold mb-1">4.95 out of 5 stars</p>
-                        <small class="text-muted">from 23 reviews</small>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- AMAZON CARD -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card award-card shadow-sm text-center p-4">
-                        <img src="./img/amazon.svg" class="award-logo mb-3" alt="">
-                        <p class="text-muted small mt-3">
-                            They build modern<br>looking websites easily using Tabs.
-                        </p>
+                    <a href="#" class="award-link">
+                        <div class="card award-card shadow-sm text-center p-4">
+                            <img src="./img/amazon.svg" class="award-logo mb-3" alt="">
+                            <p class="text-muted small mt-3">
+                                They build modern<br>looking websites easily using Tabs.
+                            </p>
 
-                        <a href="#" class="learn-link link-dark d-inline-block">Learn more</a>
-                    </div>
+                            <span class="learn-link link-dark d-inline-block">Learn more</span>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- SLACK CARD -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card award-card shadow-sm text-center p-4">
-                        <img src="./img/slack.svg" class="award-logo mb-3" alt="">
-                        <p class="text-muted small mt-3">
-                            They build modern<br>looking websites easily using Trello.
-                        </p>
+                    <a href="#" class="award-link">
+                        <div class="card award-card shadow-sm text-center p-4">
+                            <img src="./img/slack.svg" class="award-logo mb-3" alt="">
+                            <p class="text-muted small mt-3">
+                                They build modern<br>looking websites easily using Trello.
+                            </p>
 
-                        <a href="#" class="learn-link link-dark d-inline-block">Learn more</a>
-                    </div>
+                            <span class="learn-link link-dark d-inline-block">Learn more</span>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- SPOTIFY CARD -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card award-card shadow-sm text-center p-4">
-                        <img src="./img/spotify.svg" class="award-logo mb-3" alt="">
-                        <div class="star-rating animated-stars">
-                            <input type="radio" id="star5" name="rating" value="5">
-                            <label for="star5" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" class="bi bi-star-fill"></label>
-                            <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" class="bi bi-star-fill"></label>
+                    <a href="#" class="award-link">
+                        <div class="card award-card shadow-sm text-center p-4">
+                            <img src="./img/spotify.svg" class="award-logo mb-3" alt="">
+                            <div class="star-rating static-stars">
+                                <i class="bi bi-star text-muted"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="fw-bold mb-1">4.95 out of 5 stars</p>
+                            <small class="text-muted">from 23 reviews</small>
                         </div>
-
-                        <p class="fw-bold mb-1">4.95 out of 5 stars</p>
-                        <small class="text-muted">from 23 reviews</small>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- PAYPAL CARD -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card award-card shadow-sm text-center p-4">
-                        <img src="./img/paypal.svg" class="award-logo mb-3" alt="">
-                        <p class="text-muted small mt-3">
-                            They build modern<br>looking websites easily using Docker.
-                        </p>
+                    <a href="#" class="award-link">
+                        <div class="card award-card shadow-sm text-center p-4">
+                            <img src="./img/paypal.svg" class="award-logo mb-3" alt="">
+                            <p class="text-muted small mt-3">
+                                They build modern<br>looking websites easily using Docker.
+                            </p>
 
-                        <a href="#" class="learn-link link-dark d-inline-block">Learn more</a>
-                    </div>
+                            <span class="learn-link link-dark d-inline-block">Learn more</span>
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -682,29 +676,29 @@
                 <div class="col-md-2 mb-4">
                     <h6 class="fw-bold mb-3">Account</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Billing</a></li>
-                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Profile</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Settings</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Billing</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Notifications</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-2 mb-4">
                     <h6 class="fw-bold mb-3">About</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Services</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Pricing</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Careers</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-2 mb-4">
                     <h6 class="fw-bold mb-3">Company</h6>
                     <ul class="list-unstyled opacity-75">
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Community</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Help center</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Support</a></li>
                     </ul>
                 </div>
 

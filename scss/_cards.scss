@@ -1,0 +1,41 @@
+.payment-card-box {
+  background: white;
+  border-radius: 10px;
+  border-bottom-right-radius: 100px;
+  max-width: 400px;
+}
+
+.credit-card {
+  background: linear-gradient(135deg, #1d1b48, #3b2f84);
+  position: relative;
+
+  .small-badge {
+    font-size: 0.7rem;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+}
+
+.transaction {
+  p {
+    margin: 0;
+  }
+}
+
+.award-link {
+  text-decoration: none;
+  color: inherit;
+
+  .award-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 20px;
+  }
+
+  &:hover .award-card {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+}
