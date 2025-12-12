@@ -62,27 +62,30 @@ Open the project
  - No server is required since this is a static project.
 
 ---
-♿ Accessibility Notes
+## ♿ Accessibility Notes
 Images include meaningful alt attributes.
 Icons and interactive elements use aria-label when needed.
 The layout supports keyboard navigation through Bootstrap components.
 
 ---
 
-💭 Reflections
-What works well?
+## 💭 Reflections
+
+### What works well?
+
 Clear structure and visual hierarchy
 Strong use of Bootstrap components
 Easy to extend and maintain
 
-Possible improvements?
+### Possible improvements?
+
 Convert repeated UI elements into reusable components using React
 Improve color contrast in some sections
 Extend accessibility support further (focus states, screen reader testing)
 
 ---
 
-📌 Final Notes
+## 📌 Final Notes
 This project focuses on clarity, responsiveness, and maintainability while staying aligned with real-world frontend practices.
 It is not a pixel-perfect reproduction, but a practical and scalable implementation.
 
