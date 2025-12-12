@@ -3,6 +3,9 @@
 This project is a static landing page built from a provided mock-up using **Bootstrap 5.3**, **SCSS**, and a small amount of JavaScript where needed.  
 The goal was to reproduce the layout and behavior while keeping the code clean, responsive, and maintainable.
 
+![Grabaciondepantalla2025-12-12alas5 35 33p m -ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/200e892b-5b15-4e5e-b180-37971e63309f)
+
+
 ---
 
 ## 🚀 Tech Stack
