@@ -5,6 +5,8 @@ The goal was to reproduce the layout and behavior while keeping the code clean, 
 
 ![Grabaciondepantalla2025-12-12alas5 35 33p m -ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/200e892b-5b15-4e5e-b180-37971e63309f)
 
+![Grabaciondepantalla2025-12-12alas5 38 55p m -ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/36d81f39-f3a1-4cbd-9a02-07530dafd252)
+
 
 ---
 
