@@ -37,7 +37,6 @@
 }
 
 #features {
-
   .form-check-input {
     border-color: $odoo-green;
     background-color: transparent;
@@ -72,29 +71,65 @@
   border-radius: 50%;
 }
 
+/* Company icon */
 .company-icon {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    display: block;
-    margin: 15px auto 0;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  display: block;
+  margin: 15px auto 0;
 }
 
+/* Avatars group */
 .avatar-group {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .avatar-small {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid white;
-    margin-left: -10px;
-    margin-bottom: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-left: -10px;
+  margin-bottom: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.avatar-small:first-child {
-    margin-left: 0;
+/* DESKTOP CARDS VIEW */
+@media (min-width: 992px) {
+
+  /* Odd cards up*/
+  #awards .row > div:nth-child(odd) .award-card {
+    transform: translateY(-22px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  /* Even cards down */
+  #awards .row > div:nth-child(even) .award-card {
+    transform: translateY(22px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  /* Hover */
+  #awards .row > div:nth-child(odd) .award-link:hover .award-card {
+    transform: translateY(-35px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  #awards .row > div:nth-child(even) .award-link:hover .award-card {
+    transform: translateY(5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* MOBILE/TABLET RESET */
+@media (max-width: 991px) {
+  #awards .award-card {
+    transform: none !important;
+  }
 }
