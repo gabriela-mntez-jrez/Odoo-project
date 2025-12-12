@@ -58,18 +58,16 @@ sass scss/main.scss css/styles.css
 sass --watch scss/main.scss:css/styles.css
 ```
 Open the project
-Simply open index.html in your browser:
+ - Simply open index.html in your browser: open index.html or double-click the file.
+ - No server is required since this is a static project.
 
-open index.html or double-click the file.
-
-No server is required since this is a static project.
-
+---
 ♿ Accessibility Notes
 Images include meaningful alt attributes.
-
 Icons and interactive elements use aria-label when needed.
-
 The layout supports keyboard navigation through Bootstrap components.
+
+---
 
 💭 Reflections
 What works well?
@@ -81,6 +79,8 @@ Possible improvements?
 Convert repeated UI elements into reusable components using React
 Improve color contrast in some sections
 Extend accessibility support further (focus states, screen reader testing)
+
+---
 
 📌 Final Notes
 This project focuses on clarity, responsiveness, and maintainability while staying aligned with real-world frontend practices.
